@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Dwijen Chawra'
 
 theme = "risotto"
-author = "Joe Roe"
+author = "Dwijen Chawra"
 copyright = "© Dwijen Chawra"
 paginate = 3
 DefaultContentLanguage = "en"
@@ -25,7 +25,6 @@ palette = "base16-dark"
 [params.about]
 title = "Dwijen Chawra"
 description = ""
-logo = "images/rice.svg"
 
 [params.about.image]
 src = "assets/dwijen.jpg"
@@ -54,9 +53,15 @@ url = "https://orcid.org/0000-0002-7873-9126"
 [menu]
 
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+    identifier = "publications"
+    name = "Publications"
+    url = "/publications/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
     weight = 10
 
 [taxonomies]
