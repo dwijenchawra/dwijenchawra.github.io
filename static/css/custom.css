@@ -1,0 +1,25 @@
+/* Override this file to customise the theme's CSS for your site */
+h3 {
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    /* underline only the text */
+    /* text-decoration: underline !important; */
+}
+
+
+h2 {
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+}
+
+h1, 
+h4, 
+h5, 
+h6 {
+    font-size: 1rem;
+    margin: 1.5rem 0 0 0;
+    font-weight: 600;
+}
+
+h2:before { content: ""; }
+h3:before { content: ""; }
