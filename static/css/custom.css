@@ -1,19 +1,28 @@
 /* Override this file to customise the theme's CSS for your site */
-h3 {
+
+
+
+h2 {
     font-size: 1.5rem !important;
     font-weight: 600 !important;
+    padding-bottom: 1rem !important;
+}
+
+
+h3 {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    padding-bottom: 0.5rem !important;
     /* underline only the text */
     /* text-decoration: underline !important; */
 }
 
-
-h2 {
+h4 {
     font-size: 1.15rem !important;
     font-weight: 600 !important;
 }
 
-h1, 
-h4, 
+h1,  
 h5, 
 h6 {
     font-size: 1rem;
@@ -23,3 +32,8 @@ h6 {
 
 h2:before { content: ""; }
 h3:before { content: ""; }
+h4:before { content: ""; }
+
+.aside__about {
+    padding-bottom: 0.5rem !important;
+}

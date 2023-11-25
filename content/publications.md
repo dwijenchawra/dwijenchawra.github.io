@@ -6,13 +6,13 @@ aliases = ["publications"]
 author = "Dwijen Chawra"
 +++
 
-1. **A threshold by any other name: is five minutes of wake ‘long’ enough to degrade sleep quality?**
-   - *Oxford Sleep* — [DOI Link](https://doi.org/10.1093/sleep/zsad295), Nov 2023
+1. **A threshold by any other name: is five minutes of wake ‘long’ enough to degrade sleep quality?** Renske Lok, Dwijen Chawra, Jamie M Zeitzer  
+*Oxford Sleep* — [DOI Link](https://doi.org/10.1093/sleep/zsad295), Nov 2023
 
-2. **Objective underpinnings of self-reported sleep quality in middle-aged and older adults: The importance of N2 and wakefulness**
-   - *Biological Psychology Volume 170* — [DOI Link](https://doi.org/10.1016/j.biopsycho.2022.108290), April 2022
+2. **Sleep-wake stability and variability in the middle-aged adult population** Renske Lok, Lara Weed, Dwijen Chawra, Joe Winer, Jamie Zeitzer  
+*Sleep Volume 45* — [DOI Link](https://doi.org/10.1093/sleep/zsac079.157), June 2022
 
-3. **Sleep-wake stability and variability in the middle-aged adult population**
-   - *Sleep Volume 45* — [DOI Link](https://doi.org/10.1093/sleep/zsac079.157), June 2022
+3. **Objective underpinnings of self-reported sleep quality in middle-aged and older adults: The importance of N2 and wakefulness** Renske Lok, Dwijen Chawra, Flora Hon, Michelle Ha, Katherine A. Kaplan, Jamie M. Zeitzer  
+*Biological Psychology Volume 170* — [DOI Link](https://doi.org/10.1016/j.biopsycho.2022.108290), April 2022
 
 

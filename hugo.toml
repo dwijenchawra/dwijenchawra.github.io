@@ -36,17 +36,22 @@ src = "assets/dwijen.jpg"
 # * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
 
 [[params.socialLinks]]
-icon = "fa-brands fa-github"
+icon = "fa-brands fa-github fa-xl"
 title = "GitHub"
 url = "https://github.com/dwijenchawra"
 
 [[params.socialLinks]]
-icon = "fa-solid fa-envelope"
+icon = "fa-brands fa-linkedin fa-xl"
+title = "LinkedIn"
+url = "https://www.linkedin.com/in/dchawra/"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-envelope fa-xl"
 title = "Email"
 url = "mailto:dchawra@purdue.edu"
 
 [[params.socialLinks]]
-icon = "ai ai-orcid"
+icon = "ai ai-orcid ai-xl"
 title = "ORCID"
 url = "https://orcid.org/0000-0002-7873-9126"
 
