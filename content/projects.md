@@ -6,6 +6,15 @@ aliases = ["projects"]
 author = "Dwijen Chawra"
 +++
 
+### Battelle Drug Identification NER Model
+
+**[Project Page](https://dwijen.dev/drug_NER)** [GitHub](https://github.com/dwijenchawra/drug_NER) | Aug 2022 - May 2023
+
+- Worked with Battelle Inc. to develop a NER model to identify drug name and usage from medical records.
+- Used a BioBERT bi-directional LSTM model to achieve 94% accuracy on the test set.
+- Deployed the model as a Flask app running on the Anvil Supercomputer.
+- Presented at The Data Mine's annual Corporate Partner Symposium.
+
 ### Soundscape 
 
 [GitHub](https://github.com/dwijenchawra/soundscape) | Jan 2023
@@ -21,12 +30,6 @@ author = "Dwijen Chawra"
 - Developed a mobile app to categorize clothes and find outfits using React Native and Expo.
 - Built a Flask API to store and retrieve user data using AWS S3, and trained a custom CNN to classify clothes.
 - Won “Second Best use of AWS” at Purdue’s 2022 Hello World hackathon.
-
-<!-- Neuron Education | Python, Flutter, Linux, NGINX, Appwrite Nov 2020 - Dec 2021
-• Self-hosted a full-stack online platform for remote education on a Raspberry Pi using Flutter and NGINX.
-SAT Web Scraper | Python, Selenium, Linux, CRON, Twilio Sep 2020 - Nov 2020
-• Wrote a web scraper to scan for open SAT test seats, and automatically sign up. Executed via Raspberry Pi CRON job.
- -->
 
 ### Neuron Education
 Nov 2020 - Dec 2021
