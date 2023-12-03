@@ -27,7 +27,7 @@ title = "Dwijen Chawra"
 description = ""
 
 [params.about.image]
-src = "assets/dwijen.jpeg"
+src = "assets/dwijen.jpg"
 
 
 # Sidebar: social links
