@@ -23,5 +23,5 @@ This repository contains my code to generate statistics on wake duration and wak
 
 My first paper with the Zeitzer Circadian Lab. We analyzed the relationship between sleep quality and objective sleep metrics, such as time spent in sleep stages, sleep efficiency, and wake after sleep onset. We found that the most important objective metric for sleep quality was the amount of time spent in N2 sleep, and the amount of time spent awake after sleep onset. 
 
-![Feature Importances](/assets/images/featimp.png)
+![Feature Importances](/images/featimp.png)
 
