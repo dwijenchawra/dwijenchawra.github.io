@@ -19,10 +19,10 @@ author = "Dwijen Chawra"
     This paper studied the effect of missing sections from actigraphy data, and benchmarked different imputation methods. My contributions to this work were processing the raw actigraphy data from fitness watches, and creating a flexible pipeline in Python for testing various imputation methods and time windows. 
 
 
-3. **Objective underpinnings of self-reported sleep quality in middle-aged and older adults: The importance of N2 and wakefulness** Renske Lok, Dwijen Chawra, Flora Hon, Michelle Ha, Katherine A. Kaplan, Jamie M. Zeitzer  
+3. **Objective underpinnings of self-reported sleep quality in middle-aged and older adults: The importance of N2 and wakefulness** Renske Lok, Dwijen Chawra, Flora Hon, Michelle Ha, Katherine A. Kaplan, Jamie M. Zeitzer
 *Biological Psychology Volume 170* — [DOI Link](https://doi.org/10.1016/j.biopsycho.2022.108290), April 2022 \
 [Github](https://github.com/ZeitzerLab/polysomnography23)
 
     My first paper with the Zeitzer Circadian Lab. We analyzed the relationship between sleep quality and objective sleep metrics, such as time spent in sleep stages, sleep efficiency, and wake after sleep onset. We found that the most important objective metric for sleep quality was the amount of time spent in N2 sleep, and the amount of time spent awake after sleep onset. 
 
-    {{<carousel items="1" height="400" unit="px" duration="7000" data="p3carousel">}}
+    <!-- {{<carousel items="1" height="400" unit="px" duration="7000" data="p3carousel">}} -->
