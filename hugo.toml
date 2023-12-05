@@ -1,6 +1,7 @@
 baseURL = 'https://dwijen.dev/'
 languageCode = 'en-us'
 title = 'Dwijen Chawra'
+enableGitInfo = true
 
 theme = "risotto"
 author = "Dwijen Chawra"
@@ -60,13 +61,13 @@ url = "https://orcid.org/0000-0002-7873-9126"
   [[menu.main]]
     identifier = "publications"
     name = "Publications"
-    url = "/publications/"
+    url = "/publications/index.html"
     weight = 10
   
   [[menu.main]]
     identifier = "projects"
     name = "Projects"
-    url = "/projects/"
+    url = "/projects/index.html"
     weight = 10
 
 [taxonomies]
@@ -77,6 +78,10 @@ series = "series"
 # For hugo >= 0.60.0, enable inline HTML
 [markup.goldmark.renderer]
 unsafe = true
+
+[frontmatter]
+  lastmod = ["lastmod", ":git", "date", "publishDate"]
+
 
 [markup]
 

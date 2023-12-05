@@ -14,10 +14,10 @@
 
 {{define "aside" }}
     {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
-    {{ if or (.Params.author) (.Params.date) }}
+    {{ if or (.Params.author) (.Lastmod) }}
         <p>
-            {{ if .Params.author }}By {{ .Params.author }}{{ if .Date }}, {{ end }}{{ end }}
-            {{ if .Date }}{{ .Date.Format "2006-01-02" }}{{ end }}
+            {{ if .Params.author }}By {{ .Params.author }},{{ end }}
+            {{ .Lastmod.Format "Jan 02, 2006 3:04 PM" }}
         </p>
     {{ end }}
 

@@ -1,0 +1,49 @@
+{{ $height := (.Get "height") }}
+{{ $unit := (.Get "unit") }}
+{{ $items := (.Get "items") }}
+{{ $descFileNames := slice }}
+<div id="carousel-container{{ .Ordinal }}" class="carousel-container">
+
+  <div id="carousel{{ .Ordinal }}" class="carousel" duration="{{ .Get "duration" }}">
+      <ul>
+        {{- range $index, $slide := .Page.Resources.Match (print (.Get "data") "/*.png") }}
+          {{- $fname := print (index (findRE  "[A-Za-z0-9]+" $slide) 1) ".txt" -}}
+          {{ $descFileNames = $descFileNames | append $fname }}
+          <li id="c{{ $.Ordinal }}_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $items }}); padding-bottom: {{ $height }}{{ $unit }};">
+            {{ $image := $.Page.Resources.GetMatch $slide }}
+            {{ with $image }}
+              <img src="{{ .RelPermalink }}" width="30px">
+            {{ end }}
+              <!-- <img src="{{ $slide }}" alt=""/> -->
+              <!-- <div>
+                  <div>{{ $slide }}</div>
+              </div> -->
+          </li>
+        {{- end }}
+      </ul>
+      <ol class="bullets">
+        {{- range $index, $page := .Page.Resources.Match (print (.Get "data") "/*.png") }}
+          <li><a href="#c{{ $.Ordinal }}_slide{{ add $index 1 }}"></a></li>
+        {{- end }}
+      </ol>
+
+      
+
+      <div class="prev">&lsaquo;</div>
+      <div class="next">&rsaquo;</div>
+      
+  </div>
+
+  <ol class="descriptions">
+    {{- range $index, $currdesc := .Page.Resources.Match (print (.Get "data") "/*.md") }}
+        <li>
+            <div>
+                {{- $currdesc.Content -}}
+            </div>
+        </li>
+    {{- end }}
+
+</ol>
+
+
+</div>
