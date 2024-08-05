@@ -1,116 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dwijen Chawra - Personal Website</title>
+    <title>Dwijen Chawra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.2;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 1.3em;
-            color: #2c3e50;
-        }
-        h2 {
-            font-size: 1.2em;
-            color: #2c3e50;
-        }
-        h3 {
-            font-size: 1.1em;
-            color: #2c3e50;
-        }
-        .section {
-            margin-bottom: 25px;
-        }
-        .project, .publication {
-            margin-bottom: 15px;
-        }
         a {
-            color: #3498db;
+            border-bottom: 1px dashed rgb(187, 187, 187);
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
-        }
     </style>
+
 </head>
-<body>
-    <header>
-        <h1>Dwijen Chawra</h1>
-        <p>Computer Science Student at Purdue University</p>
-    </header>
 
-    <div class="section">
-        <h2>About Me</h2>
-        <p>I'm a sophomore studying Computer Science at Purdue University. My interests lie at the junction of Natural Language Processing and High Performance Computing, and I aspire to create effective solutions to human-computer communication in the future.</p>
-    </div>
+<body class="bg-slate-100 text-gray-800 font-sans antialiased leading-relaxed">
+    <div class="container mx-auto px-4 py-8 max-w-3xl">
+        <header class="text-right mb-12">
+            <h1 class="text-4xl font-bold mb-2">Dwijen Chawra</h1>
+            <p class="text-xl text-gray-600">Computer Science Student at Purdue University</p>
+        </header>
 
-    <div class="section">
-        <h2>What I'm Doing Now</h2>
-        <ul>
-            <li>Developing training architecture for e-Lab to train multimodal LLMs for document understanding.</li>
-        </ul>
-        <h3>Current Positions:</h3>
-        <ul>
-            <li><strong>eLab - Purdue University:</strong> Student Researcher (May 2023 – Present, West Lafayette, IN)</li>
-            <li><strong>Rosen Center for Advanced Computing - Purdue University:</strong> Student HPC Engineer (Aug 2022 – Present, West Lafayette, IN)</li>
-        </ul>
-    </div>
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">About me</h2>
+            <p class="text-lg">I'm a junior studying Computer Science at Purdue University. My interests lie in high
+                performance computing and harnessing it for general intelligence.</p>
+        </section>
 
-    <div class="section">
-        <h2>Publications</h2>
-        <div class="publication">
-            <h3>1. A threshold by any other name: is five minutes of wake 'long' enough to degrade sleep quality?</h3>
-            <p>Renske Lok, Dwijen Chawra, Jamie M Zeitzer</p>
-            <p><em>Oxford Sleep</em> — <a href="https://doi.org/10.1093/sleep/zsad295">DOI Link</a>, Nov 2023</p>
-            <p><a href="https://github.com/ZeitzerLab/polysomnography23/tree/reviewer_feedback">GitHub</a></p>
-        </div>
-        <div class="publication">
-            <h3>2. Sleep-wake stability and variability in the middle-aged adult population</h3>
-            <p>Renske Lok, Lara Weed, Dwijen Chawra, Joe Winer, Jamie Zeitzer</p>
-            <p><em>Sleep Volume 45</em> — <a href="https://doi.org/10.3390/clockssleep4040039">DOI Link</a>, June 2022</p>
-            <p><a href="https://github.com/dwijenchawra/SleepLab2021">GitHub</a></p>
-        </div>
-        <div class="publication">
-            <h3>3. Objective underpinnings of self-reported sleep quality in middle-aged and older adults: The importance of N2 and wakefulness</h3>
-            <p>Renske Lok, Dwijen Chawra, Flora Hon, Michelle Ha, Katherine A. Kaplan, Jamie M. Zeitzer</p>
-            <p><em>Biological Psychology Volume 170</em> — <a href="https://doi.org/10.1016/j.biopsycho.2022.108290">DOI Link</a>, April 2022</p>
-            <p><a href="https://github.com/ZeitzerLab/polysomnography23">GitHub</a></p>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Battelle Drug Identification NER Model</h3>
-            <p><a href="https://dwijen.dev/drug_NER">Project Page</a> | <a href="https://github.com/dwijenchawra/drug_NER">GitHub</a> | Aug 2022 - May 2023</p>
-            <ul>
-                <li>Worked with Battelle Inc. to develop a NER model to identify drug name and usage from medical records.</li>
-                <li>Used a BioBERT bi-directional LSTM model to achieve 94% accuracy on the test set.</li>
-                <li>Deployed the model as a Flask app running on the Anvil Supercomputer.</li>
-                <li>Presented at The Data Mine's annual Corporate Partner Symposium.</li>
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">What I'm up to</h2>
+            <ul class="list-disc list-inside text-lg">
+                <li>Writing code at <a href="https://artafinance.com" class="text-gray-600">Arta
+                        Finance</a></li>
+                <li>Developing training architecture for <a href="https://e-lab.github.io/" class="text-gray-600">e-Lab</a> to train multimodal LLMs for document understanding.</li>
             </ul>
-        </div>
-        <div class="project">
-            <h3>Soundscape</h3>
-            <p><a href="https://github.com/dwijenchawra/soundscape">GitHub</a> | Jan 2023</p>
-            <ul>
-                <li>Created an intelligent playlist generator that uses NLP and performs sentiment analysis on transcribed speech.</li>
-                <li>Stored vectorized songs in CockroachDB's relational database and generated playlists based on user emotion.</li>
-                <li>Won "Best use of CockroachDB" at Purdue's annual Boilermake X hackathon.</li>
-            </ul>
-        </div>
-        <!-- Add more projects here -->
-    </div>
+        </section>
 
-    <footer>
-        <p>© 2024 Dwijen Chawra. All rights reserved.</p>
-    </footer>
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Battelle Drug Identification NER Model</h3>
+                    <p class="mb-2">
+                        <a href="https://dwijen.dev/drug_NER" class="text-gray-600">Project Page</a> |
+                        <a href="https://github.com/dwijenchawra/drug_NER"
+                            class="text-gray-600">GitHub</a> |
+                        Aug 2022 - May 2023
+                    </p>
+                    <ul class="list-disc list-inside">
+                        <li>Worked with Battelle Inc. to develop a NER model to identify drug name and usage from
+                            medical records.</li>
+                        <li>Used a BioBERT bi-directional LSTM model to achieve 94% accuracy on the test set.</li>
+                        <li>Deployed the model as a Flask app running on the Anvil Supercomputer.</li>
+                        <li>Presented at The Data Mine's annual Corporate Partner Symposium.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Soundscape</h3>
+                    <p class="mb-2">
+                        <a href="https://github.com/dwijenchawra/soundscape"
+                            class="text-gray-600 hover:bold">GitHub</a> |
+                        Jan 2023
+                    </p>
+                    <ul class="list-disc list-inside">
+                        <li>Created an intelligent playlist generator that uses NLP and performs sentiment analysis on
+                            transcribed speech.</li>
+                        <li>Stored vectorized songs in CockroachDB's relational database and generated playlists based
+                            on user emotion.</li>
+                        <li>Won "Best use of CockroachDB" at Purdue's annual Boilermake X hackathon.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">Publications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">A threshold by any other name: is five minutes of wake
+                        'long' enough to degrade sleep quality?</h3>
+                    <p class="text-gray-600 mb-2">Renske Lok, Dwijen Chawra, Jamie M Zeitzer</p>
+                    <p class="mb-2"><em>Oxford Sleep</em>
+                        <a href="https://doi.org/10.1093/sleep/zsad295" class="text-gray-600">
+                            <i class="fas fa-link"></i>
+                        </a>, Nov 2023
+                        <a href="https://github.com/ZeitzerLab/polysomnography23/tree/reviewer_feedback"
+                            class="text-gray-600">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Sleep-wake stability and variability in the middle-aged
+                        adult population</h3>
+                    <p class="text-gray-600 mb-2">Renske Lok, Lara Weed, Dwijen Chawra, Joe Winer, Jamie Zeitzer</p>
+                    <p class="mb-2"><em>Sleep Volume 45</em>
+                        <a href="https://doi.org/10.3390/clockssleep4040039" class="text-gray-600">
+                            <i class="fas fa-link"></i>
+                        </a>, June 2022
+                        <a href="https://github.com/dwijenchawra/SleepLab2021" class="text-gray-600">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Objective underpinnings of self-reported sleep quality in
+                        middle-aged and older adults: The importance of N2 and wakefulness</h3>
+                    <p class="text-gray-600 mb-2">Renske Lok, Dwijen Chawra, Flora Hon, Michelle Ha, Katherine A.
+                        Kaplan, Jamie M. Zeitzer</p>
+                    <p class="mb-2"><em>Biological Psychology Volume 170</em>
+                        <a href="https://doi.org/10.1016/j.biopsycho.2022.108290" class="text-gray-600">
+                            <i class="fas fa-link"></i>
+                        </a>, April 2022
+                        <a href="https://github.com/ZeitzerLab/polysomnography23" class="text-gray-600">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>
