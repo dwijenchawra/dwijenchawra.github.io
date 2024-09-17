@@ -12,39 +12,45 @@
             border-bottom: 1px dashed rgb(187, 187, 187);
             text-decoration: none;
         }
+        body {
+            background-color: rgb(226, 232, 240);
+        }
     </style>
 
 </head>
 
 <body class="bg-slate-100 text-gray-800 font-sans antialiased leading-relaxed">
     <div class="container mx-auto px-4 py-8 max-w-3xl">
-        <header class="text-right mb-12">
+        <header class="text-right mb-8">
             <h1 class="text-4xl font-bold mb-2">Dwijen Chawra</h1>
-            <p class="text-xl text-gray-600">Computer Science Student at Purdue University</p>
+            <!-- <p class="text-xl text-gray-600">Computer Science Student at Purdue University</p> -->
             <nav class="text-right text-lg mt-2">
                 <a href="#about" class="mr-4 text-gray-600">About</a>
                 <a href="#projects" class="mr-4 text-gray-600">Projects</a>
-                <a href="#publications" class="mr-4 text-gray-600">Publications</a>
+                <a href="#publications" class="text-gray-600">Publications</a>
                 <!-- <a href="thoughts" class="text-gray-600">Thoughts</a> -->
             </nav>
         </header>
 
-        <section id="about" class="mb-12">
+        <section id="about" class="mb-8">
             <h2 class="text-2xl font-semibold mb-4">About me</h2>
-            <p class="text-lg">I'm a junior studying Computer Science at Purdue University. My interests lie in high
-                performance computing and harnessing it for general intelligence.</p>
+            <p class="text-lg">I'm a junior studying Computer Science at Purdue University. I'm a maker, researcher, and love coding close to the hardware. My interests lie in the intersection of ML and high performance computing.</p>
         </section>
 
-        <section class="mb-12">
+
+        <section class="mb-8" style="a {
+                border-bottom: 1px dashed rgb(187, 187, 187);
+                text-decoration: none;
+            }">
             <h2 class="text-2xl font-semibold mb-4">What I'm up to</h2>
             <ul class="list-disc list-inside text-lg">
-                <li>Writing code at <a href="https://artafinance.com" class="text-gray-600">Arta
-                        Finance</a></li>
+                <li>Teaching assistant for CS 250: Computer Architecture at Purdue University.</li>
+                <li>Writing code at <a href="https://artafinance.com" class="text-gray-600">Arta Finance</a></li>
                 <li>Developing training architecture for <a href="https://e-lab.github.io/" class="text-gray-600">e-Lab</a> to train multimodal LLMs for document understanding.</li>
             </ul>
         </section>
 
-        <section id="projects" class="mb-12">
+        <section id="projects" class="mb-8">
             <h2 class="text-2xl font-semibold mb-4">Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-md">
@@ -57,10 +63,7 @@
                     </p>
                     <ul class="list-disc list-inside">
                         <li>Worked with Battelle Inc. to develop a NER model to identify drug name and usage from
-                            medical records.</li>
-                        <li>Used a BioBERT bi-directional LSTM model to achieve 94% accuracy on the test set.</li>
-                        <li>Deployed the model as a Flask app running on the Anvil Supercomputer.</li>
-                        <li>Presented at The Data Mine's annual Corporate Partner Symposium.</li>
+                            medical records, utilizing a BioBERT bi-directional LSTM model to achieve 94% accuracy on the test set.</li>
                     </ul>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
@@ -75,7 +78,6 @@
                             transcribed speech.</li>
                         <li>Stored vectorized songs in CockroachDB's relational database and generated playlists based
                             on user emotion.</li>
-                        <li>Won "Best use of CockroachDB" at Purdue's annual Boilermake X hackathon.</li>
                     </ul>
                 </div>
             </div>
