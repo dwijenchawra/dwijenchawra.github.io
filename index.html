@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +7,47 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        a {
-            border-bottom: 1px dashed rgb(187, 187, 187);
-            text-decoration: none;
+        html {
+            font-size: 20px;
+            font-family: 'Roboto', serif;
         }
         body {
-            background-color: rgb(226, 232, 240);
+            background-color: rgb(255, 253, 246);
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .section-header h2 {
+            white-space: nowrap;
+            margin-right: 1rem;
+        }
+        .section-line {
+            height: 1px;
+            background-color: rgb(229, 229, 229);
+            width: 100%;
+        }
+        a {
+            border-bottom: 1px solid rgb(229, 229, 229);
+            text-decoration: none;
+            transition: border-color 0.2s ease;
+        }
+        a:hover {
+            border-color: rgb(156, 163, 175);
         }
     </style>
-
 </head>
 
-<body class="bg-slate-100 text-gray-800 font-sans antialiased leading-relaxed">
-    <div class="container mx-auto px-4 py-8 max-w-3xl">
-        <header class="flex justify-between items-center mb-8">
-            <div class="w-32 h-32 overflow-hidden rounded-full">
-                <img src="images/dwijen.png" alt="Dwijen Chawra" class="w-full h-full object-cover">
+<body class="text-gray-800 font-sans antialiased leading-relaxed">
+    <div class="container mx-auto px-4 py-12 max-w-2xl">
+        <header class="flex justify-between items-center mb-12">
+            <div class="w-24 h-24 overflow-hidden rounded-full">
+                <img src="images/dw2.png" alt="Dwijen Chawra" class="w-full h-full object-cover">
             </div>
             <div class="text-right">
-                <h1 class="text-4xl font-bold mb-2">Dwijen Chawra</h1>
-                <nav class="text-right text-lg mt-2">
+                <h1 class="text-3xl font-normal mb-2">Dwijen Chawra</h1>
+                <nav class="text-right text-base mt-2">
                     <a href="#about" class="mr-4 text-gray-600">About</a>
                     <a href="#projects" class="mr-4 text-gray-600">Projects</a>
                     <a href="#publications" class="text-gray-600">Publications</a>
@@ -35,104 +55,108 @@
             </div>
         </header>
 
-
-        <section id="about" class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4">About me</h2>
-            <p class="text-lg">I'm a junior studying Computer Science at Purdue University. I'm a maker, researcher, and love coding close to the hardware. My interests lie in the intersection of ML and high performance computing.</p>
+        <section id="about" class="mb-12">
+            <p class="text-base mb-4">
+                I'm a junior studying Computer Science at Purdue University. My interests lie in the intersection of ML and high performance computing.
+            </p>
+            <p class="text-base mb-4">
+                I was an undergraduate researcher at the <a href="https://sleep.sites.stanford.edu/" class="text-gray-600">Zeitzer Circadian Research Lab</a> at Stanford University, where I worked on developing models to predict sleep quality from polysomnography data.
+            </p>
         </section>
 
-
-        <section class="mb-8" style="a {
-                border-bottom: 1px dashed rgb(187, 187, 187);
-                text-decoration: none;
-            }">
-            <h2 class="text-2xl font-semibold mb-4">What I'm up to</h2>
-            <ul class="list-disc list-inside text-lg">
+        <section class="mb-12">
+            <div class="section-header">
+                <h2 class="text-xl font-normal">What I'm up to</h2>
+                <div class="section-line"></div>
+            </div>
+            <ul class="text-base space-y-2">
                 <li>Teaching assistant for CS 250: Computer Architecture at Purdue University.</li>
                 <li>Writing code at <a href="https://artafinance.com" class="text-gray-600">Arta Finance</a></li>
                 <li>Developing training architecture for <a href="https://e-lab.github.io/" class="text-gray-600">e-Lab</a> to train multimodal LLMs for document understanding.</li>
             </ul>
         </section>
 
-        <section id="projects" class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Battelle Drug Identification NER Model</h3>
-                    <p class="mb-2">
-                        <a href="https://dwijen.dev/drug_NER" class="text-gray-600">Project Page</a> |
-                        <a href="https://github.com/dwijenchawra/drug_NER"
-                            class="text-gray-600">GitHub</a> |
-                        Aug 2022 - May 2023
-                    </p>
-                    <ul class="list-disc list-inside">
-                        <li>Worked with Battelle Inc. to develop a NER model to identify drug name and usage from
-                            medical records, utilizing a BioBERT bi-directional LSTM model to achieve 94% accuracy on the test set.</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Soundscape</h3>
-                    <p class="mb-2">
-                        <a href="https://github.com/dwijenchawra/soundscape"
-                            class="text-gray-600 hover:bold">GitHub</a> |
-                        Jan 2023
-                    </p>
-                    <ul class="list-disc list-inside">
-                        <li>Created an intelligent playlist generator that uses NLP and performs sentiment analysis on
-                            transcribed speech.</li>
-                        <li>Stored vectorized songs in CockroachDB's relational database and generated playlists based
-                            on user emotion.</li>
-                    </ul>
-                </div>
+        <section id="projects" class="mb-12">
+            <div class="section-header">
+                <h2 class="text-xl font-normal">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-lg font-normal mb-1">Battelle Drug Identification NER Model</h3>
+                <p class="text-sm text-gray-600 mb-2">
+                    <a href="https://dwijen.dev/drug_NER" class="text-gray-600">Project Page</a> |
+                    <a href="https://github.com/dwijenchawra/drug_NER" class="text-gray-600">GitHub</a> |
+                    Aug 2022 - May 2023
+                </p>
+                <p class="text-base">
+                    Worked with Battelle Inc. to develop a NER model to identify drug name and usage from medical records, utilizing a BioBERT bi-directional LSTM model to achieve 94% accuracy on the test set.
+                </p>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-lg font-normal mb-1">Soundscape</h3>
+                <p class="text-sm text-gray-600 mb-2">
+                    <a href="https://github.com/dwijenchawra/soundscape" class="text-gray-600">GitHub</a> |
+                    Jan 2023
+                </p>
+                <p class="text-base">
+                    Created an intelligent playlist generator that uses NLP and performs sentiment analysis on transcribed speech. Stored vectorized songs in CockroachDB's relational database and generated playlists based on user emotion.
+                </p>
             </div>
         </section>
 
         <section id="publications">
-            <h2 class="text-2xl font-semibold mb-4">Publications</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">A threshold by any other name: is five minutes of wake
-                        'long' enough to degrade sleep quality?</h3>
-                    <p class="text-gray-600 mb-2">Renske Lok, Dwijen Chawra, Jamie M Zeitzer</p>
-                    <p class="mb-2"><em>Oxford Sleep</em>
-                        <a href="https://doi.org/10.1093/sleep/zsad295" class="text-gray-600">
-                            <i class="fas fa-link"></i>
-                        </a>, Nov 2023
-                        <a href="https://github.com/ZeitzerLab/polysomnography23/tree/reviewer_feedback"
-                            class="text-gray-600">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">The Impact of Missing Data and Imputation Methods on the Analysis of 24-Hour Activity Patterns</h3>
-                    <p class="text-gray-600 mb-2">Renske Lok, Lara Weed, Dwijen Chawra, Joe Winer, Jamie Zeitzer</p>
-                    <p class="mb-2"><em>Sleep Volume 45</em>
-                        <a href="https://doi.org/10.3390/clockssleep4040039" class="text-gray-600">
-                            <i class="fas fa-link"></i>
-                        </a>, June 2022
-                        <a href="https://github.com/dwijenchawra/SleepLab2021" class="text-gray-600">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Objective underpinnings of self-reported sleep quality in
-                        middle-aged and older adults: The importance of N2 and wakefulness</h3>
-                    <p class="text-gray-600 mb-2">Renske Lok, Dwijen Chawra, Flora Hon, Michelle Ha, Katherine A.
-                        Kaplan, Jamie M. Zeitzer</p>
-                    <p class="mb-2"><em>Biological Psychology Volume 170</em>
-                        <a href="https://doi.org/10.1016/j.biopsycho.2022.108290" class="text-gray-600">
-                            <i class="fas fa-link"></i>
-                        </a>, April 2022
-                        <a href="https://github.com/ZeitzerLab/polysomnography23" class="text-gray-600">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </p>
-                </div>
+            <div class="section-header">
+                <h2 class="text-xl font-normal">Publications</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-lg font-normal mb-1">A threshold by any other name: is five minutes of wake 'long' enough to degrade sleep quality?</h3>
+                <p class="text-sm text-gray-600 mb-1">Renske Lok, Dwijen Chawra, Jamie M Zeitzer</p>
+                <p class="text-sm text-gray-600">
+                    <em>Oxford Sleep</em>
+                    <a href="https://doi.org/10.1093/sleep/zsad295" class="text-gray-600 ml-1">
+                        <i class="fas fa-link"></i>
+                    </a>
+                    <span class="mx-1">Nov 2023</span>
+                    <a href="https://github.com/ZeitzerLab/polysomnography23/tree/reviewer_feedback" class="text-gray-600">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </p>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-lg font-normal mb-1">The Impact of Missing Data and Imputation Methods on the Analysis of 24-Hour Activity Patterns</h3>
+                <p class="text-sm text-gray-600 mb-1">Renske Lok, Lara Weed, Dwijen Chawra, Joe Winer, Jamie Zeitzer</p>
+                <p class="text-sm text-gray-600">
+                    <em>Sleep Volume 45</em>
+                    <a href="https://doi.org/10.3390/clockssleep4040039" class="text-gray-600 ml-1">
+                        <i class="fas fa-link"></i>
+                    </a>
+                    <span class="mx-1">June 2022</span>
+                    <a href="https://github.com/dwijenchawra/SleepLab2021" class="text-gray-600">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </p>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="text-lg font-normal mb-1">Objective underpinnings of self-reported sleep quality in middle-aged and older adults</h3>
+                <p class="text-sm text-gray-600 mb-1">Renske Lok, Dwijen Chawra, Flora Hon, Michelle Ha, Katherine A. Kaplan, Jamie M. Zeitzer</p>
+                <p class="text-sm text-gray-600">
+                    <em>Biological Psychology Volume 170</em>
+                    <a href="https://doi.org/10.1016/j.biopsycho.2022.108290" class="text-gray-600 ml-1">
+                        <i class="fas fa-link"></i>
+                    </a>
+                    <span class="mx-1">April 2022</span>
+                    <a href="https://github.com/ZeitzerLab/polysomnography23" class="text-gray-600">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </p>
             </div>
         </section>
     </div>
 </body>
-
 </html>
